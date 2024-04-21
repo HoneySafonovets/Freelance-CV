@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/reset.css">
+  <link rel="stylesheet" href="./css/main.css">
+  <link rel="stylesheet" href="./css/media.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+  <link rel="icon" href="./assets/SVG/startup_1.svg">
+  <title>Freelancer portfolio</title>
+</head>
+<body>
+  <header class="header">
+    <div class="header__container">
+        <div class="header__nav">
+          <a href="#!" class="header__logo">Kelvin</a>
+          <nav class="nav" id="nav"> 
+            <ul class="nav-list">
+              <li class="nav-list__item nav-list__item--inactive"><a href="#!" class="nav-list__link nav-list__link--inactive">Home</a></li>
+              <li class="nav-list__item"><a href="#!" class="nav-list__link">Works</a></li>
+              <li class="nav-list__item"><a href="#!" class="nav-list__link">Services</a></li>
+              <li class="nav-list__item"><a href="#!" class="nav-list__link">About</a></li>
+              <li class="nav-list__item"><a href="#!" class="nav-list__link">Contact</a></li>
+            </ul>
+            <button class="nav-button" id="nav-btn">
+              <img src="./assets/Mobile/NAV.svg" alt="Nav button" class="nav-button-img" id="nav-btn-img">
+            </button>
+          </nav>
+        </div>
+        <div class="header__container-content">
+          <div class="header__content">
+            <h1 class="header__content--title">Kelvin Kramer<br><span>Designer & Developer</span></h1>
+            <p class="header__content--subtitle">I’m a portrait, fashion and lifestyle photographer living In New York City. During my thirteen year tenure here.</p>
+          </div>
+          <div class="header__img">
+            <picture>
+              <source media="(max-width: 700px)" srcset="./assets/hero_mobile.png">
+              <img src="./assets/hero.png" alt="Kelvin image" class="header__img--item">
+            </picture>
+
+          </div>
+        </div>
+    </div>
+  </header>
+  <main class="main">
+    <section class="services">
+        <div class="container">
+          <div class="services-row">
+            <div class="service-card">
+              <img src="./assets/SVG/graphic_1.svg" alt="Design" class="service-card__img">
+              <h2 class="service-card__title">
+                UI/UX Design
+              </h2>
+              <p class="service-card__description">
+                Our design is translated into comprehensive digital environments built on latest development standards.
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="./assets/SVG/startup_1.svg" alt="Startup" class="service-card__img">
+              <h2 class="service-card__title">
+                Development
+              </h2>
+              <p class="service-card__description">
+                Our design is translated into comprehensive digital environments built on latest development standards.
+              </p>
+            </div>
+            <div class="service-card">
+              <img src="./assets/SVG/browser_1.svg" alt="Browser" class="service-card__img">
+              <h2 class="service-card__title">
+                software testing
+              </h2>
+              <p class="service-card__description">
+                Our design is translated into comprehensive digital environments built on latest development standards.
+              </p>
+            </div>
+          </div>
+        </div>
+    </section>
+    <section class="portfolio">
+      <h2 class="portfolio__title">Portfolio</h2>
+      <div class="portfolio__content">
+        <div class="portfolio__card">
+          <picture>
+            <source media="(max-width: 700px)" srcset="./assets/Mobile-Portfolio/port_1.jpg">
+            <img src="./assets/JPG/Sloy_8.jpg" alt="Wear portfolio">
+          </picture>
+          <p class="portfolio__card-description">Online fashion store - Homepage</p>
+        </div>
+        <div class="portfolio__card">
+          <picture>
+            <source media="(max-width: 700px)" srcset="./assets/Mobile-Portfolio/port_2.jpg">
+            <img src="./assets/JPG/reebok_web.jpg" alt="Reebok Store">
+          </picture>
+          <p class="portfolio__card-description">Reebok Store - Concept</p>
+        </div>
+        <div class="portfolio__card">
+          <picture>
+            <source media="(max-width: 700px)" srcset="./assets/Mobile-Portfolio/port_3.jpg">
+            <img src="./assets/JPG/Sloy_89.jpg" alt="Braun Landing Page">
+          </picture>
+          <p class="portfolio__card-description">Braun Landing Page - Concept</p>
+        </div>
+      </div>
+    </section>
+  </main>
+  <footer class="footer">
+    <div class="footer__wrapper">
+      <div class="footer__wrapper-top">
+        <h2 class="footer__title">Contacts </h2>
+        <p class="footer__description">
+          Want to know more or just chat?<br>
+          You are welcome!
+        </p>
+        <button class="footer__button">Send message</button>
+      </div>
+      <div class="footer__wrapper-bottom">
+        <ul class="footer__social">
+          <li>
+            <a href="https://ru.linkedin.com/"><img src="./assets/Footer-icons/LinkedIn.svg" alt="LinkedIn"></a>
+          </li>
+          <li>
+            <a href="https://www.instagram.com/"><img src="./assets/Footer-icons/Instargam.svg" alt="Instargam"></a>
+          </li>
+          <li>
+            <a href="https://www.behance.net/"><img src="./assets/Footer-icons/Behance.svg" alt="Behance"></a>
+          </li>
+          <li>
+            <a href="https://dribbble.com/"><img src="./assets/Footer-icons/Dribble.svg" alt="Dribble"></a>
+          </li>
+        </ul>
+        <p class="footer__social-description">
+          Like me on<br>
+          LinkedIn, Instagram, Behance, Dribble
+        </p>
+      </div>
+    </div>
+  </footer>
+  <script src="./js/main.js"></script>
+</body>
+</html>

@@ -1,0 +1,282 @@
+@import "./reset.css";
+@import "./media.css";
+
+body {
+  font-family: 'Poppins', sans-serif;
+  --main-color: #000000;
+  color: var(--main-color);
+  font-size: 14px;
+}
+
+.container {
+  max-width: 1600px;
+  margin: 0 auto;
+}
+
+.hidden {
+  overflow: hidden;
+}
+
+/* Header */
+
+.header {
+  width: 100%;
+  --header-bg: #F1F1F1;
+  background-color: var(--header-bg);
+}
+
+.header__container {
+  max-width: 1230px;
+  padding-top: 46px;
+  padding-left: 30px;
+  padding-right: 30px;
+  background-color: var(--header-bg);
+  margin: 0 auto;
+}
+
+.header__nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.header__logo {
+  position: relative;
+
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 1;
+  color: #000000;
+  padding: 0 12px 3px 0px;
+}
+
+.header__logo::after {
+  content: "";
+  position: absolute;
+  display: block;
+  width: 8px;
+  height: 8px;
+  right: 0;
+  bottom: 0;
+  background-color: #FDA300;
+  border-radius: 50%;
+}
+
+
+/* Header nav */
+.nav-list {
+  display: flex;
+  column-gap: 50px;
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.nav-list__link {
+  color: var(--main-color);
+}
+
+.nav-list__item--inactive .nav-list__link {
+  pointer-events: none;
+  color: #606060 !important;
+}
+
+.nav-list__item.nav-list__link--inactive {
+  pointer-events: none;
+  color: #606060;
+}
+
+.nav-list__link--inactive {
+  color: #606060;
+  pointer-events: none;
+}
+
+
+
+/* Header content */
+.header__container-content {
+  padding: 76px 0px 0px 0px;
+  display: flex;
+  justify-content: space-between;
+  column-gap: 30px;
+}
+
+.header__content {
+  max-width: 500px;
+  margin-top: 124px;
+}
+
+.header__content--title {
+  font-weight: 600;
+  font-size: 44px;
+  margin-bottom: 20px;
+}
+
+.header__content--subtitle {
+  font-size: 14px;
+  line-height: 2;
+}
+
+.header__img {
+  display: block;
+  /* width: 494px; */
+  height: 100%;
+}
+.header__img--item {
+  width: 100%;
+  height: 100%;
+}
+
+/* Mobile header */
+
+.nav-button {
+  display: none;
+}
+
+/* Main section */
+
+/* Service */
+
+.services {
+  padding: 90px 30px;
+}
+
+.services-row {
+  display: flex;
+  justify-content: center;
+  column-gap: 30px;
+  row-gap: 60px;
+  flex-wrap: wrap;
+  max-width: 1170px;
+  margin: 0 auto;
+}
+
+.service-card {
+  flex: 1 1 0;
+  /* max-width: 370px; */
+  min-width: 315px;
+  display: flex;
+  flex-direction: column;
+}
+
+.service-card__img {
+  width: 68px;
+  height: 68px;
+  margin-bottom: 30px;
+}
+
+.service-card__title {
+  text-transform: uppercase;
+  margin-bottom: 10px;
+  font-weight: 600;
+  font-size: 24px;
+}
+
+.service-card__description {
+  line-height: 2;
+}
+
+
+/* Portfolio section */
+
+body .main .portfolio {
+  padding: 90px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #F1F1F1;
+}
+
+.portfolio__title {
+  font-weight: 600;
+  font-size: 34px;
+  margin-bottom: 60px;
+}
+
+.portfolio__content {
+  max-width: 930px;
+  display: flex;
+  flex-direction: column;
+  row-gap: 90px;
+  width: 100%;
+}
+
+.portfolio__card {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio__card-description {
+  margin-top: 40px;
+  text-decoration: underline;
+  font-size: 18px;
+}
+
+
+/* Footer section */
+
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 90px 0px;
+}
+
+.footer__wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 80px;
+}
+
+.footer__wrapper-top {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__wrapper-bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.footer__title {
+  color: #070707;
+  font-weight: 600;
+  font-size: 34px;
+}
+
+.footer__description {
+  color: #070707;
+  font-weight: 400;
+  font-size: 18px;
+  text-align: center;
+}
+
+.footer__button {
+  background-color: #000000;
+  width: 180px;
+  height: 42px;
+  border-radius: 25px;
+  font-size: 18px;
+  font-weight: 400;
+  color: #FFFFFF;
+}
+
+.footer__social {
+  display: flex;
+  gap: 60px;
+}
+
+.footer__social-description {
+  text-align: center;
+  font-weight: 400;
+  font-size: 14px;
+  color: #828282;
+}
